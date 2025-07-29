@@ -4,21 +4,16 @@ import hudson.EnvVars;
 import hudson.slaves.EnvironmentVariablesNodeProperty;
 import org.aerogear.kryptowire.GlobalConfigurationImpl;
 import org.apache.commons.io.IOUtils;
-import org.apache.http.HttpResponse;
-import org.apache.http.StatusLine;
-import org.apache.http.client.ResponseHandler;
-import org.apache.http.client.methods.HttpPost;
 import org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition;
 import org.jenkinsci.plugins.workflow.job.WorkflowRun;
-import org.junit.*;
+import org.junit.ClassRule;
+import org.junit.Rule;
+import org.junit.Test;
 import org.jvnet.hudson.test.BuildWatcher;
 import org.jvnet.hudson.test.JenkinsRule;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.jenkinsci.plugins.workflow.job.*;
-import org.omg.CORBA.Environment;
-import sun.net.www.http.HttpClient;
+import org.jenkinsci.plugins.workflow.job.WorkflowJob;
+import org.jenkinsci.plugins.workflow.job.WorkflowRun;
 
 public class KWSubmitStepTest extends Mockito {
     @ClassRule public static BuildWatcher bw = new BuildWatcher();

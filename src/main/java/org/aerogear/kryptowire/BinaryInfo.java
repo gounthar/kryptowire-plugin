@@ -1,6 +1,5 @@
 package org.aerogear.kryptowire;
 
-import org.apache.commons.lang.StringUtils;
 import org.json.JSONObject;
 
 public class BinaryInfo {

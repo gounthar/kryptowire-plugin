@@ -17,7 +17,8 @@ import org.apache.http.impl.client.HttpClients;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
 import java.util.logging.Logger;
 
 public class KryptowireServiceImpl implements KryptowireService {

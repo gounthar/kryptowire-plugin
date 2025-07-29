@@ -1,6 +1,6 @@
 package org.aerogear.kryptowire;
 
-import hudson.model.*;
+import hudson.model.Run;
 import jenkins.model.GlobalConfiguration;
 import jenkins.model.Jenkins;
 import jenkins.model.RunAction2;
@@ -8,8 +8,6 @@ import org.json.JSONObject;
 
 import java.io.File;
 import java.io.IOException;
-import java.text.ParseException;
-import java.util.List;
 
 
 public class BinaryHistoryAction implements RunAction2 {
